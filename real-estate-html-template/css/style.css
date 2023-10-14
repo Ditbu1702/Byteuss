@@ -283,7 +283,7 @@
 }
 
 .property-item .border-top {
-    border-top: 1px dashed rgba(0, 185, 142, .3) !important;
+    border-top: 1px dashed #00b98e4d !important;
 }
 
 .property-item .border-end {
