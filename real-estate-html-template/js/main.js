@@ -26,6 +26,7 @@
     });
     
     
+    
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -38,6 +39,32 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
+
+    var wrapper = document.getElementById("wrapper");
+    var registerLink = document.getElementById("register-link");
+    var loginLink = document.getElementById("login-link");
+    var btnLoginPopup = document.getElementById("btnPopup");
+    var iconClose = document.getElementById("icon-close");
+
+    
+  
+    registerLink.addEventListener('click', ()=>{
+        wrapper.classList.add('active');
+    });
+    
+    loginLink.addEventListener('click', ()=>{
+        wrapper.classList.remove('active');
+    }); 
+
+    btnLoginPopup.addEventListener('click', ()=>{
+        wrapper.classList.add('active-popup');
+    });
+
+    iconClose.addEventListener('click', ()=>{
+        wrapper.classList.remove('active-popup');
+    });
+
+
 
 
     // Header carousel
@@ -55,27 +82,8 @@
     });
 
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        margin: 24,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            992:{
-                items:2
-            }
-        }
-    });
+    
     
 })(jQuery);
 
+    

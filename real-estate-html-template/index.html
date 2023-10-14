@@ -74,11 +74,76 @@
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Add Property</a>
+                    <button class="btnLogin-popup" id="btnPopup">
+                        Login/ Sign Up
+                    </button>
+                    
+                    
                 </div>
+                
+
+                
+        
+                </div> 
             </nav>
         </div>
+       
         <!-- Navbar End -->
+        <div class="wrapper" id="wrapper">
+            <span class="icon-close" id="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account?<a href="#" class="register-link" id="register-link"> Register</a></p>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        
+                        <label><input type="checkbox"> I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already't have an account?<a href="#" class="login-link" id="login-link"> Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
 
 
         <!-- Header Start -->
@@ -151,7 +216,7 @@
                     <h1 class="mb-3">Property Types</h1>
                     <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4" >
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <a class="cat-item d-block bg-light text-center rounded p-3" href="">
                             <div class="rounded p-4">
@@ -760,7 +825,7 @@
 
 
         <!-- Testimonial Start -->
-        <div class="container-xxl py-5">
+        <div class="container-xxl py-5" >
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Our Clients Say!</h1>
@@ -886,6 +951,8 @@
         </div>
         <!-- Footer End -->
 
+        
+
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -897,10 +964,16 @@
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
 
     <!-- Template Javascript -->
+
     <script src="js/main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+Basic usage
 </body>
 
 </html>
