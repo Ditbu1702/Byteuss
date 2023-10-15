@@ -4,6 +4,7 @@
         --secondary: #FF6922;
         --light: #EFFDF5;
         --dark: #0E2E50;
+        
     }
     
     .back-to-top {
@@ -35,12 +36,7 @@
         transition: .5s;
     }
     
-    .btn.btn-primary{
-    color:#fff;
-    }
-    
-    
-    
+    .btn.btn-primary,
     .btn.btn-secondary {
         color: #FFFFFF;
     }
@@ -174,7 +170,7 @@
     position: relative;
     width: 400px;
     height: 440px;
-    background: transparent;
+    background: #fff;
     border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
@@ -255,7 +251,7 @@
 
 .input-box label{
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
